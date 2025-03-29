@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FollowBot | Roblox</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#" class="nav-item" id="home-link">Home</a>
+        <a href="#followbot" class="nav-item">FollowBot</a>
+        <a href="#gamecopier" class="nav-item">GameCopier</a>
+        <a href="#clothingcopier" class="nav-item">ClothingCopier</a>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to FollowBot, GameCopier, and ClothingCopier</h1>
+        <p>Your go-to platform for Roblox tools!</p>
+        <div class="avatar-container">
+            <img src="https://www.roblox.com/asset-thumbnail/image?assetId=123456" class="roblox-avatar" id="avatar" alt="Roblox Avatar">
+        </div>
+    </header>
+
+    <!-- FollowBot Section -->
+    <section id="followbot">
+        <h2>FollowBot</h2>
+        <textarea id="followbot-input" placeholder="Paste here to activate the FollowBot" rows="5" cols="50"></textarea>
+        <button class="submit-btn" onclick="sendData('FollowBot')">Submit FollowBot</button>
+    </section>
+
+    <!-- GameCopier Section -->
+    <section id="gamecopier">
+        <h2>GameCopier</h2>
+        <textarea id="gamecopier-input" placeholder="Paste here to activate the GameCopier" rows="5" cols="50"></textarea>
+        <button class="submit-btn" onclick="sendData('GameCopier')">Submit GameCopier</button>
+    </section>
+
+    <!-- ClothingCopier Section -->
+    <section id="clothingcopier">
+        <h2>ClothingCopier</h2>
+        <textarea id="clothingcopier-input" placeholder="Paste here to activate the ClothingCopier" rows="5" cols="50"></textarea>
+        <button class="submit-btn" onclick="sendData('ClothingCopier')">Submit ClothingCopier</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 FollowBot | All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
